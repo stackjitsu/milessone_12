@@ -1,0 +1,60 @@
+/* style.css */
+:root{
+  /* Formal neutral palette: grey / black / off-white */
+  --bg:#0e0e0e;          /* near-black background */
+  --card:#161616;        /* dark grey cards */
+  --text:#f2f2f2;        /* off-white primary text */
+  --muted:#b5b5b5;       /* muted grey */
+  --border:#2a2a2a;      /* subtle borders */
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6
+}
+.container{max-width:980px;margin:28px auto;padding:20px}
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:8px;
+  margin-bottom:20px;
+  border:1px solid var(--border);
+}
+.hero{display:flex;gap:18px;align-items:center}
+.profile{
+  width:120px;
+  height:120px;
+  border-radius:6px;
+  object-fit:cover;
+  border:1px solid var(--border)
+}
+.hero-text h1{
+  margin:0;
+  font-size:28px;
+  font-weight:600;
+  letter-spacing:0.2px
+}
+.role{color:var(--muted);margin:4px 0}
+.tagline{color:var(--text);font-weight:500}
+.lead{color:var(--muted)}
+.skills-list{display:flex;gap:12px;flex-wrap:wrap;list-style:none;padding:0}
+.skills-list li{
+  background:#1f1f1f;
+  padding:8px 12px;
+  border-radius:6px;
+  border:1px solid var(--border);
+  color:var(--muted)
+}
+.section-title{
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:10px;
+  border-bottom:1px solid var(--border);
+  padding-bottom:6px
+}
+
+.footer{text-align:center;color:var(--muted);font-size:14px}
